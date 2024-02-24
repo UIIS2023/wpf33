@@ -1,0 +1,27 @@
+﻿<Window x:Class="Apoteka.Forme.Proizvod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apoteka.Forme"
+        mc:Ignorable="d"
+        Title="Proizvod" Height="450" Width="400">
+    <Grid>
+        <Label Content="Naziv: " HorizontalAlignment="Left" Margin="20,18,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Proizvodjac:" HorizontalAlignment="Left" Margin="20,57,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Rok Trajanja:" HorizontalAlignment="Left" Margin="20,96,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Margin="120,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtProizvodjac" HorizontalAlignment="Left" Margin="120,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dpRokTrajanja" HorizontalAlignment="Left" Margin="120,97,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.005,0.603" Height="35" Width="69" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="321,385,0,0" VerticalAlignment="Top" Height="35" Width="69" Click="btnOtkazi_Click"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Margin="20,136,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Opis:" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtCena" HorizontalAlignment="Left" Margin="120,140,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtOpis" HorizontalAlignment="Left" Margin="120,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" Height="120"/>
+
+        <Label Content="Dobavljac:" HorizontalAlignment="Left" Margin="20,325,0,0" VerticalAlignment="Top" />
+        <ComboBox x:Name="cbDobavljac" HorizontalAlignment="Left" Margin="120,327,0,0" VerticalAlignment="Top" Width="120"
+          DisplayMemberPath="NazivDobavljaca" SelectedValuePath="DobavljacID"/>
+    </Grid>
+</Window>

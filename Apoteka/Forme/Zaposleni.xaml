@@ -1,0 +1,30 @@
+﻿<Window x:Class="Apoteka.Forme.Zaposleni"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Apoteka.Forme"
+        mc:Ignorable="d"
+        Title="Zaposleni" Height="460" Width="400">
+    <Grid>
+        <Label Content="Ime :" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prezime :" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="JMBG :" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Grad :" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adresa :" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kontakt :" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top"/>
+        <Label Content="Korisnicko Ime :" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lozinka :" HorizontalAlignment="Left" Margin="10,362,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIme" HorizontalAlignment="Left" Margin="141,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtPrezime" HorizontalAlignment="Left" Margin="141,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtJMBG" HorizontalAlignment="Left" Margin="141,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtGrad" HorizontalAlignment="Left" Margin="141,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtAdresa"  HorizontalAlignment="Left" Margin="141,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtKontaktZaposlenog" HorizontalAlignment="Left" Margin="141,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtKorisnickoIme" HorizontalAlignment="Left" Margin="141,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txtLozinka" HorizontalAlignment="Left" Margin="141,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="10,399,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.005,0.603" Height="35" Width="69" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="321,399,0,0" VerticalAlignment="Top" Height="35" Width="69" Click="btnOtkazi_Click"/>
+
+    </Grid>
+</Window>
